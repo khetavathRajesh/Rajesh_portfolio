@@ -25,13 +25,13 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    setIsSubmitting(false);
     
     // Simulate form submission
     setTimeout(() => {
       toast({
         title: "Message sent",
-        description: "Thank you for your message. I'll get back to you soon!",
+        description: "Please Email/Phone call  me . I'll get back to you soon!",
       });
       setFormData({
         name: "",
@@ -153,7 +153,7 @@ const ContactSection = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Your message..."
+                    placeholder="Appreciate   you   typing  message , for  now  directly  contact   me ,  i   havent  integrated  api   yet   😅"
                     rows={5}
                     required
                   />
