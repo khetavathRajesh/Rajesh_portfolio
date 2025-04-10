@@ -1,5 +1,6 @@
 
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const AboutSection = () => {
   return (
@@ -24,20 +25,16 @@ const AboutSection = () => {
           </div>
           
           <div className="relative group">
-            <div className="relative rounded-md overflow-hidden border-2 border-primary/50 w-full aspect-square md:max-w-md mx-auto">
-              {/* Profile image would go here */}
-              <div className="bg-secondary h-full w-full flex items-center justify-center">
-                <span className="text-lg text-muted-foreground">Profile Image</span>
-              </div>
-              
-              {/* Decorative elements */}
-              <div className={cn(
-                "absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100",
-                "transition-opacity duration-300"
-              )} />
-            </div>
+            <Avatar className="w-full h-full max-w-md mx-auto rounded-md border-2 border-primary/50">
+              <AvatarImage 
+                src="/lovable-uploads/9cf6eb90-48a3-4d2a-9574-c4de6075149e.png" 
+                alt="Profile Picture" 
+                className="object-cover w-full h-full rounded-md"
+              />
+              <AvatarFallback>JD</AvatarFallback>
+            </Avatar>
             
-            {/* Border decorative element */}
+            {/* Decorative border */}
             <div className={cn(
               "absolute -z-10 border-2 border-primary",
               "w-full h-full rounded-md top-4 left-4",
