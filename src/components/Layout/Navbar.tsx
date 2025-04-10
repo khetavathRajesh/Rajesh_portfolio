@@ -59,7 +59,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="src/assets/Khetavath_Rajesh.pdf" 
+            href="public/lovable-uploads/Khetavath_Rajesh.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="ml-4 btn btn-outline px-4 py-2"
@@ -97,7 +97,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="src/assets/Khetavath_Rajesh.pdf" 
+            href="public/lovable-uploads/Khetavath_Rajesh.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-primary px-6 py-2 w-full"
