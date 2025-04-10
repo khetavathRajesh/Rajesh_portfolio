@@ -97,7 +97,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="/resume.pdf" 
+            href="src\Khetavath_Rajesh.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-primary px-6 py-2 w-full"
