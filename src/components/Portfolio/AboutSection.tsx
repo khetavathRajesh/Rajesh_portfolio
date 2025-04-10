@@ -27,7 +27,7 @@ const AboutSection = () => {
           <div className="relative group">
           <Avatar className="w-full h-full max-w-md mx-auto rounded-md border-2 border-primary/50">
               <AvatarImage 
-                src="public/lovable-uploads/Profile.jpg" 
+                src="public/Profile.jpg" 
                 alt="Profile Picture" 
                 className="object-cover w-full h-full rounded-md"
               />
