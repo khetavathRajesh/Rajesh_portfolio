@@ -10,14 +10,14 @@ const HeroSection = () => {
         <div className="max-w-3xl animate-fade-in">
           <p className="text-primary mb-4">Hello, my name is</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            John Doe
+            Rajesh Khetavath
           </h1>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-muted-foreground">
             I build things for the web.
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-xl">
             I'm a software engineer specializing in building exceptional digital experiences.
-            Currently, I'm focused on building accessible, human-centered products.
+            Currently, I'm focused on building Scalable apps which are human-centered products.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg">

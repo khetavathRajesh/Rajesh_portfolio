@@ -4,19 +4,19 @@ import { cn } from "@/lib/utils";
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Vue.js", "Tailwind CSS", "SASS"]
+    skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Tailwind CSS"]
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PHP", "Laravel", "REST APIs", "GraphQL"]
+    skills: ["Node.js", "Python", "Django", "PHP", "REST APIs"]
   },
   {
     title: "Database",
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "Supabase"]
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"]
   },
   {
     title: "DevOps & Tools",
-    skills: ["Git", "Docker", "GitHub Actions", "CI/CD", "AWS", "Netlify", "Vercel", "Figma", "Adobe XD"]
+    skills: ["Git", "Docker", "GitHub Actions","Netlify",  "Figma"]
   }
 ];
 

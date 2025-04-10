@@ -5,41 +5,25 @@ import { cn } from "@/lib/utils";
 
 const experiences = [
   {
-    company: "Tech Company",
-    position: "Senior Software Engineer",
-    period: "January 2022 - Present",
+    company: "Proficonlabs",
+    position: "Software Engineer",
+    period: "July 2024 - Present",
     description: [
-      "Lead the development of a new customer-facing portal using React and TypeScript",
-      "Implemented CI/CD pipelines that reduced deployment time by 70%",
+      "Lead the development of a new customer-facing portal using Angular and TypeScript",
+      // "Implemented CI/CD pipelines that reduced deployment time by 70%",
       "Mentored junior developers and conducted technical interviews",
-      "Optimized application performance, reducing load times by 40%"
+      "Optimized application performance, reducing load times by 40% by allowing Microservices Architecture and DOM structure of the project"
     ],
-    technologies: ["React", "TypeScript", "Node.js", "AWS", "Docker"]
+    technologies: ["Angluar", "TypeScript", "Node.js", "AWS", "Firebase", "RESTful api"]
   },
   {
-    company: "Digital Agency",
+    company: "Innovya Technologies",
     position: "Frontend Developer",
-    period: "June 2019 - December 2021",
-    description: [
-      "Built responsive web applications for various clients in the finance sector",
-      "Created reusable component libraries that improved development efficiency",
-      "Collaborated with designers to implement pixel-perfect UI components",
-      "Integrated various third-party APIs and services"
+    period: "June 2023 - August 2023",
+    description: ["Designed and implemented a proof-of-concept website featuring price estimation mechanism utilizing machine learning and Django technologies"
     ],
-    technologies: ["JavaScript", "React", "SASS", "GraphQL", "Gatsby"]
+    technologies: ["dJango", "Python", "ML", "PostgreSQL", "GIT"]
   },
-  {
-    company: "Startup Inc.",
-    position: "Web Developer",
-    period: "March 2017 - May 2019",
-    description: [
-      "Developed and maintained the company's customer-facing web application",
-      "Implemented new features based on customer feedback and business requirements",
-      "Worked in an agile environment with cross-functional teams",
-      "Optimized website performance and SEO"
-    ],
-    technologies: ["HTML", "CSS", "JavaScript", "jQuery", "PHP"]
-  }
 ];
 
 const ExperienceSection = () => {
@@ -82,8 +66,8 @@ const ExperienceSection = () => {
                     className={cn("animate-fade-in", activeTab === index.toString() ? "block" : "hidden")}
                   >
                     <div className="space-y-4">
-                      <h3 className="text-xl font-semibold">
-                        {exp.position} <span className="text-primary">@ {exp.company}</span>
+                      <h3 className="text-xl font-semibold" >
+                        {exp.position} <span className="text-primary" >@ {exp.company}</span>
                       </h3>
                       <p className="text-muted-foreground">{exp.period}</p>
                       

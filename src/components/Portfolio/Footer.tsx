@@ -5,11 +5,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Github size={20} />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com", label: "Twitter" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com", label: "Instagram" },
-    { icon: <Mail size={20} />, href: "mailto:john.doe@example.com", label: "Email" }
+    { icon: <Github size={20} />, href: "https://github.com/khetavathRajesh", label: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/rajesh-khetavath-753422200/", label: "LinkedIn" },
+    // { icon: <Twitter size={20} />, href: "https://twitter.com", label: "Twitter" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/khetavath_rajesh/", label: "Instagram" },
+    { icon: <Mail size={20} />, href: "mailto:Khetavathrajeshxvi@gmail.com", label: "Email" }
   ];
 
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-sm text-muted-foreground">
-            Designed & Built by John Doe
+            Designed & Built by Rajesh Khetavath
           </p>
           <p className="text-sm text-muted-foreground mt-1">
             © {currentYear} All Rights Reserved

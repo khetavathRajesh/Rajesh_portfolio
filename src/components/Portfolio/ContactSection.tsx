@@ -47,19 +47,19 @@ const ContactSection = () => {
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "Khetavathrajeshxvi@gmail.com",
+      href: "Khetavathrajeshxvi@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 (630) 034-4791",
+      href: "tel:+916300344791"
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
       label: "Location",
-      value: "New York, NY",
+      value: "Hyderabad, IND",
       href: null
     }
   ];
@@ -112,7 +112,7 @@ const ContactSection = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Your name"
                       required
                     />
                   </div>
@@ -126,7 +126,7 @@ const ContactSection = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="Youremail@example.com"
                       required
                     />
                   </div>
@@ -140,7 +140,7 @@ const ContactSection = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Reason of contact"
                     required
                   />
                 </div>
