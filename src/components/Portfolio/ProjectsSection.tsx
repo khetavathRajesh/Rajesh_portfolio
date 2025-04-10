@@ -27,7 +27,7 @@ const projects = [
     description: "A Full-pledged E-Commerce website which meets the requirements of a end-use to business owner requirements.",
     image: "/THELAYERSHOP.png",
     technologies: ["Wordpress", "HTML", "CSS"],
-    liveLink: "https://example.comhttps://thelayershop.com/",
+    liveLink: "https://thelayershop.com/",
     // repoLink: "https://github.com"
   },
   {
