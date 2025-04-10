@@ -27,11 +27,10 @@ const AboutSection = () => {
           <div className="relative group">
           <Avatar className="w-full h-full max-w-md mx-auto rounded-md border-2 border-primary/50">
               <AvatarImage 
-                src="src\assets\WhatsApp Image 2025-04-10 at 18.59.05_971c10ee.jpg" 
+                src="src/assets/WhatsApp Image 2025-04-10 at 18.59.05_971c10ee.jpg" 
                 alt="Profile Picture" 
                 className="object-cover w-full h-full rounded-md"
               />
-              <AvatarFallback>JD</AvatarFallback>
             </Avatar>
             
             
