@@ -26,15 +26,15 @@ const projects = [
     title: "The Layer Shop",
     description: "A Full-pledged E-Commerce website which meets the requirements of a end-use to business owner requirements.",
     image: "/THELAYERSHOP.png",
-    technologies: ["Vue.js", "Firebase", "Chart.js", "Tailwind CSS"],
+    technologies: ["Wordpress", "HTML", "CSS"],
     liveLink: "https://example.comhttps://thelayershop.com/",
     // repoLink: "https://github.com"
   },
   {
     title: "Simpo.ai",
     description: "3 Click website generator, meets all your requirement weather its an informational or Ecommerce , includes lot more than just a website (CRM,Blogs,Staff,Apps module)",
-    image: "/placeholder.svg",
-    technologies: ["React", "OpenWeather API", "Geolocation API", "CSS Modules"],
+    image: "/Simpo.png",
+    technologies: ["Angular", "RESTful API", "Geolocation API", "CSS Modules"],
     liveLink: "https://simpo.ai/",
     // repoLink: "https://github."
   }
