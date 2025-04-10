@@ -7,36 +7,36 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment integration.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-    liveLink: "https://example.com",
-    repoLink: "https://github.com"
+    title: "SEWA",
+    description: "Created a messaging service utilizing Meta-approved customized templates and messages ,Developed comprehensive modules including Campaign Broadcast management, Live chat/history features and Opt In/Out management, Business Owner can Manage agent permissions (RBAC).",
+    image: "/SEWA.png",
+    technologies: ["React", "Node.js", "MongoDB", "RESTful", "Mapbox-public api"],
+    liveLink: "https://whatsapp.simpo.ai/",
+    // repoLink: "https://github.com"
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, task assignments, and progress tracking.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    liveLink: "https://example.com",
-    repoLink: "https://github.com"
+    title: "CMIS",
+    description: "Architected software that automates day-to-day operations of school management (from initial inquiry to student graduation), Implemented dynamic software architecture with no static typing constraints, Developed comprehensive staff and student management modules.",
+    image: "/CMIS.png",
+    technologies: ["Angular", "TypeScript", "MongoDB", "Firebase" , "Azure"],
+    liveLink: "https://dev.cmis.tejsoft.com/",
+    // repoLink: "https://github.com"
   },
   {
-    title: "Social Media Dashboard",
-    description: "A comprehensive dashboard that aggregates and displays analytics from various social media platforms.",
-    image: "/placeholder.svg",
+    title: "The Layer Shop",
+    description: "A Full-pledged E-Commerce website which meets the requirements of a end-use to business owner requirements.",
+    image: "/THELAYERSHOP.png",
     technologies: ["Vue.js", "Firebase", "Chart.js", "Tailwind CSS"],
-    liveLink: "https://example.com",
-    repoLink: "https://github.com"
+    liveLink: "https://example.comhttps://thelayershop.com/",
+    // repoLink: "https://github.com"
   },
   {
-    title: "Weather Application",
-    description: "A responsive weather application that provides real-time weather information and forecasts based on user location.",
+    title: "Simpo.ai",
+    description: "3 Click website generator, meets all your requirement weather its an informational or Ecommerce , includes lot more than just a website (CRM,Blogs,Staff,Apps module)",
     image: "/placeholder.svg",
     technologies: ["React", "OpenWeather API", "Geolocation API", "CSS Modules"],
-    liveLink: "https://example.com",
-    repoLink: "https://github.com"
+    liveLink: "https://simpo.ai/",
+    // repoLink: "https://github."
   }
 ];
 
@@ -79,10 +79,10 @@ const ProjectsSection = () => {
               
               <CardFooter className="flex justify-between gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
+                  {/* <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
                     <Github size={16} className="mr-2" />
                     Code
-                  </a>
+                  </a> */}
                 </Button>
                 <Button size="sm" asChild>
                   <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
