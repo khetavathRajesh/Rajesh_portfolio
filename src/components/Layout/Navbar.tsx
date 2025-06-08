@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,11 +40,11 @@ const Navbar = () => {
     <header
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
-        scrolled ? 'bg-background/80 backdrop-blur-md shadow-md py-2' : 'py-4'
+        scrolled ? 'glass-effect shadow-lg py-2' : 'py-4'
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold text-primary">
+        <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
           Portfolio
         </a>
 
@@ -66,22 +67,28 @@ const Navbar = () => {
           >
             Resume
           </a>
+          <div className="ml-4">
+            <ThemeToggle />
+          </div>
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-foreground focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
+          <button
+            onClick={toggleMenu}
+            className="text-foreground focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
       <div
         className={cn(
-          'fixed inset-0 bg-background z-40 transform transition-transform ease-in-out duration-300 md:hidden',
+          'fixed inset-0 glass-effect z-40 transform transition-transform ease-in-out duration-300 md:hidden',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >

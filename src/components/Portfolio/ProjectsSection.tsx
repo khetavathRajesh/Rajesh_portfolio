@@ -12,7 +12,7 @@ const projects = [
     image: "/SEWA.png",
     technologies: ["React", "Node.js", "MongoDB", "RESTful", "Mapbox-public api"],
     liveLink: "https://whatsapp.simpo.ai/",
-    // repoLink: "https://github.com"
+    gradient: "from-blue-500 to-purple-600"
   },
   {
     title: "CMIS",
@@ -20,7 +20,7 @@ const projects = [
     image: "/CMIS.png",
     technologies: ["Angular", "TypeScript", "MongoDB", "Firebase" , "Azure"],
     liveLink: "https://dev.cmis.tejsoft.com/",
-    // repoLink: "https://github.com"
+    gradient: "from-green-500 to-teal-600"
   },
   {
     title: "The Layer Shop",
@@ -28,7 +28,7 @@ const projects = [
     image: "/THELAYERSHOP.png",
     technologies: ["Wordpress", "HTML", "CSS"],
     liveLink: "https://thelayershop.com/",
-    // repoLink: "https://github.com"
+    gradient: "from-pink-500 to-red-600"
   },
   {
     title: "Simpo.ai",
@@ -36,56 +36,62 @@ const projects = [
     image: "/Simpo.png",
     technologies: ["Angular", "RESTful API", "Geolocation API", "CSS Modules"],
     liveLink: "https://simpo.ai/",
-    // repoLink: "https://github."
+    gradient: "from-orange-500 to-yellow-500"
   }
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="bg-card/30">
       <div className="container mx-auto">
         <h2 className="section-title">Some Things I've Built</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           {projects.map((project, index) => (
             <Card 
               key={index} 
               className={cn(
-                "card-hover overflow-hidden border border-border h-full",
-                "animate-fade-in"
+                "card-hover overflow-hidden border-0 h-full glass-effect",
+                "animate-fade-in group"
               )}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="h-48 overflow-hidden bg-secondary">
+              <div className="relative h-48 overflow-hidden">
+                <div className={cn("absolute inset-0 bg-gradient-to-br opacity-90", project.gradient)} />
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black/20" />
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardTitle className="text-xl bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+                  {project.title}
+                </CardTitle>
+                <CardDescription className="text-base leading-relaxed">
+                  {project.description}
+                </CardDescription>
               </CardHeader>
               
               <CardContent>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary">{tech}</Badge>
+                    <Badge 
+                      key={i} 
+                      variant="secondary" 
+                      className="bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
+                    >
+                      {tech}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>
               
-              <CardFooter className="flex justify-between gap-4">
-                <Button variant="outline" size="sm" asChild>
-                  {/* <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </a> */}
-                </Button>
-                <Button size="sm" asChild>
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+              <CardFooter className="flex justify-end">
+                <Button size="sm" className="btn-primary">
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </a>
