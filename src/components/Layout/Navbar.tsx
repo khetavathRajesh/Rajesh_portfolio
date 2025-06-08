@@ -59,7 +59,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href="/Rajesh_khetavath.pdf" 
+            href="/Khetavath_Rajesh.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="ml-4 btn btn-outline px-4 py-2"
