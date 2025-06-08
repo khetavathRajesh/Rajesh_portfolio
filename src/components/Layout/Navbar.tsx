@@ -40,7 +40,7 @@ const Navbar = () => {
     <>
       <header
         className={cn(
-          'fixed top-0 w-full z-50 transition-all duration-300',
+         'fixed top-0 w-full z-50 transition-all duration-300 bg-[#f5f5f5]', 
           scrolled 
             ? 'navbar-glass shadow-2xl py-2 border-b border-white/10' 
             : 'navbar-glass-transparent py-4'

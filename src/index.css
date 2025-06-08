@@ -91,9 +91,9 @@
     --sidebar-border: 217.2 32.6% 17.5%;
     --sidebar-ring: 24 95% 53%;
 
-    --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffcc02 100%);
+    --gradient-primary: linear-gradient(135deg, #1c45b4 0%, #7b27c0 50%, #c015a3 100%);
     --gradient-secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-hero: linear-gradient(135deg, #ff9a56 0%, #ffad56 25%, #ff6b35 75%, #e94125 100%);
+    --gradient-hero: linear-gradient(135deg, #1c45b4 0%, #7b27c0 25%, #69257a 75%, #1c45b4 100%);
   }
 }
 
