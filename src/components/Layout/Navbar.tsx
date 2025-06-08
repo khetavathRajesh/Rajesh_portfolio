@@ -40,7 +40,9 @@ const Navbar = () => {
     <header
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
-        scrolled ? 'glass-effect shadow-lg py-2' : 'py-4'
+        scrolled 
+          ? 'navbar-glass shadow-2xl py-2 border-b border-white/10' 
+          : 'navbar-glass-transparent py-4'
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -88,7 +90,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          'fixed inset-0 glass-effect z-40 transform transition-transform ease-in-out duration-300 md:hidden',
+          'fixed inset-0 navbar-glass z-40 transform transition-transform ease-in-out duration-300 md:hidden',
           isOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >

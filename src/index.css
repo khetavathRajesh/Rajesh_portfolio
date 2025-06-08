@@ -185,6 +185,93 @@
   .dark .glass-effect {
     @apply bg-black/10 backdrop-blur-md border border-white/10;
   }
+
+  /* Enhanced Navbar Glass Effects */
+  .navbar-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-glass-transparent {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .dark .navbar-glass {
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.1);
+  }
+
+  .dark .navbar-glass-transparent {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  /* Dynamic Bubble Effects */
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: bubble-float 15s infinite linear;
+  }
+
+  .bubble-1 {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.3) 0%, transparent 70%);
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 20s;
+  }
+
+  .bubble-2 {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(247, 147, 30, 0.4) 0%, transparent 70%);
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 25s;
+  }
+
+  .bubble-3 {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 204, 2, 0.2) 0%, transparent 70%);
+    left: 35%;
+    animation-delay: 4s;
+    animation-duration: 18s;
+  }
+
+  .bubble-4 {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
+    right: 20%;
+    animation-delay: 0s;
+    animation-duration: 22s;
+  }
+
+  .bubble-5 {
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, rgba(247, 147, 30, 0.25) 0%, transparent 70%);
+    right: 10%;
+    animation-delay: 3s;
+    animation-duration: 16s;
+  }
+
+  .bubble-6 {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, rgba(255, 204, 2, 0.35) 0%, transparent 70%);
+    left: 60%;
+    animation-delay: 1s;
+    animation-duration: 24s;
+  }
 }
 
 @layer utilities {
@@ -199,6 +286,23 @@
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
+  }
+
+  @keyframes bubble-float {
+    0% {
+      transform: translateY(100vh) scale(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-100px) scale(1);
+      opacity: 0;
+    }
   }
 
   .animate-glow {

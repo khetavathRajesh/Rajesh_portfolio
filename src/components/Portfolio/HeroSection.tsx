@@ -21,10 +21,14 @@ const HeroSection = () => {
             Currently focused on building scalable apps which are human-centered products.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="btn-primary text-lg px-8 py-4 rounded-full">
+            <Button size="lg" className="btn-primary text-lg px-8 py-4 rounded-full shadow-2xl hover:shadow-orange-500/25">
               <a href="#projects">View My Work</a>
             </Button>
-            <Button variant="outline" size="lg" className="text-white border-white/30 hover:bg-white/20 text-lg px-8 py-4 rounded-full">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-white border-2 border-white/60 hover:bg-white hover:text-orange-500 text-lg px-8 py-4 rounded-full backdrop-blur-sm bg-white/10 shadow-xl hover:shadow-white/25 transition-all duration-300 font-semibold"
+            >
               <a href="#contact">Get In Touch</a>
             </Button>
           </div>
@@ -38,10 +42,20 @@ const HeroSection = () => {
         </a>
       </div>
 
-      {/* Background decorative elements */}
+      {/* Enhanced Background decorative elements with dynamic bubbles */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-orange-300/20 rounded-full blur-2xl animate-pulse-slow" />
       <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-yellow-300/10 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }} />
+      
+      {/* Dynamic Bubbles */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="bubble bubble-1"></div>
+        <div className="bubble bubble-2"></div>
+        <div className="bubble bubble-3"></div>
+        <div className="bubble bubble-4"></div>
+        <div className="bubble bubble-5"></div>
+        <div className="bubble bubble-6"></div>
+      </div>
     </section>
   );
 };
