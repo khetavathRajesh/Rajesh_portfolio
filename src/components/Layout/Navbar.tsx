@@ -134,7 +134,7 @@ const Navbar = () => {
               {/* Footer */}
               <div className="p-6 border-t border-border">
                 <a 
-                  href="/Khetavath_Rajesh.pdf" 
+                href="/Khetavath_Rajesh.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-primary w-full py-3 text-center"
