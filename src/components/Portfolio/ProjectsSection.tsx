@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -42,32 +41,32 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="bg-card/30">
+    <section id="projects" className="bg-card/30 reveal-up">
       <div className="container mx-auto">
-        <h2 className="section-title">Some Things I've Built</h2>
+        <h2 className="section-title animate-fade-in-up">Some Things I've Built</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           {projects.map((project, index) => (
             <Card 
               key={index} 
               className={cn(
-                "card-hover overflow-hidden border-0 h-full glass-effect",
-                "animate-fade-in group"
+                "card-hover overflow-hidden border-0 h-full glass-effect smooth-transition",
+                "animate-fade-in group reveal-up"
               )}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-48 overflow-hidden">
-                <div className={cn("absolute inset-0 bg-gradient-to-br opacity-90", project.gradient)} />
+              <div className="relative h-48 overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/20" />
+                {/* Removed color overlay - just keeping a subtle dark overlay for text readability if needed */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+                <CardTitle className="text-xl bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                   {project.title}
                 </CardTitle>
                 <CardDescription className="text-base leading-relaxed">
@@ -81,7 +80,7 @@ const ProjectsSection = () => {
                     <Badge 
                       key={i} 
                       variant="secondary" 
-                      className="bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors"
+                      className="bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors smooth-transition"
                     >
                       {tech}
                     </Badge>
@@ -90,7 +89,7 @@ const ProjectsSection = () => {
               </CardContent>
               
               <CardFooter className="flex justify-end">
-                <Button size="sm" className="btn-primary">
+                <Button size="sm" className="btn-primary smooth-transition">
                   <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
