@@ -40,14 +40,14 @@ const Navbar = () => {
     <>
       <header
         className={cn(
-         'fixed top-0 w-full z-50 transition-all duration-300 bg-[#f5f5f5]', 
+         'fixed top-0 w-full z-50 transition-all duration-300', 
           scrolled 
-            ? 'navbar-glass shadow-2xl py-2 border-b border-white/10' 
+            ? 'navbar-glass shadow-lg py-2' 
             : 'navbar-glass-transparent py-4'
         )}
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+          <a href="#home" className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Portfolio
           </a>
 
@@ -99,16 +99,16 @@ const Navbar = () => {
           />
           
           {/* Menu Content */}
-          <div className="absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-background/95 backdrop-blur-xl border-l border-border shadow-2xl">
+          <div className="absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-l border-slate-200 dark:border-slate-700 shadow-2xl">
             <div className="flex flex-col h-full">
               {/* Header */}
-              <div className="flex items-center justify-between p-6 border-b border-border">
-                <span className="text-lg font-bold bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+              <div className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700">
+                <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Menu
                 </span>
                 <button
                   onClick={toggleMenu}
-                  className="text-foreground hover:text-primary transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   aria-label="Close menu"
                 >
                   <X size={24} />
@@ -122,7 +122,7 @@ const Navbar = () => {
                     <a
                       key={index}
                       href={item.href}
-                      className="block text-lg font-medium text-foreground hover:text-primary transition-colors py-2"
+                      className="block text-lg font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
                       onClick={toggleMenu}
                     >
                       {item.name}
@@ -132,12 +132,12 @@ const Navbar = () => {
               </div>
               
               {/* Footer */}
-              <div className="p-6 border-t border-border">
+              <div className="p-6 border-t border-slate-200 dark:border-slate-700">
                 <a 
                 href="/Khetavath_Rajesh.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn btn-primary w-full py-3 text-center"
+                  className="btn btn-primary w-full py-3 text-center block"
                   onClick={toggleMenu}
                 >
                   Download Resume
