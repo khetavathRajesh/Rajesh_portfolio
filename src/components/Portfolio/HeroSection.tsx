@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden gradient-bg">
+    <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center lg:text-left animate-fade-in">
           <div className="inline-block px-4 py-2 rounded-full bg-blue-100/80 dark:bg-blue-900/40 backdrop-blur-sm border border-blue-200/50 dark:border-blue-700/50 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
