@@ -21,6 +21,14 @@ const projects = [
     liveLink: "https://dev.cmis.tejsoft.com/",
     gradient: "from-green-500 to-teal-600"
   },
+    {
+    title: "MasalaTimez",
+    description: "An information website which can provide news and a dedicated admin section to manage the information and ability to create custom information/news.",
+    image: "/Masalatimez.png",
+    technologies: ["Angular", "TypeScript", "MongoDB", "Spring-Boot", "Firebase" , "AWS" , "Restfull Apis"],
+    liveLink: "https://masalatimez.com",
+    gradient: "from-green-500 to-teal-600"
+  },
   {
     title: "The Layer Shop",
     description: "A Full-pledged E-Commerce website which meets the requirements of a end-use to business owner requirements.",

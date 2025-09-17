@@ -40,9 +40,9 @@ const Navbar = () => {
     <>
       <header
         className={cn(
-         'fixed top-0 w-full z-50 transition-all duration-300', 
-          scrolled 
-            ? 'navbar-glass shadow-lg py-2' 
+          'fixed top-0 w-full z-50 transition-all duration-300',
+          scrolled
+            ? 'navbar-glass shadow-lg py-2'
             : 'navbar-glass-transparent py-4'
         )}
       >
@@ -62,9 +62,9 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <a 
-              href="/Khetavath_Rajesh.pdf" 
-              target="_blank" 
+            <a
+              href="/Khetavath_Rajesh.pdf"
+              target="_blank"
               rel="noopener noreferrer"
               className="ml-4 btn btn-outline px-4 py-2"
             >
@@ -93,11 +93,11 @@ const Navbar = () => {
       {isOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           {/* Backdrop */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={toggleMenu}
           />
-          
+
           {/* Menu Content */}
           <div className="absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-l border-slate-200 dark:border-slate-700 shadow-2xl">
             <div className="flex flex-col h-full">
@@ -114,7 +114,7 @@ const Navbar = () => {
                   <X size={24} />
                 </button>
               </div>
-              
+
               {/* Navigation Items */}
               <div className="flex-1 px-6 py-8">
                 <nav className="space-y-6">
@@ -130,12 +130,12 @@ const Navbar = () => {
                   ))}
                 </nav>
               </div>
-              
+
               {/* Footer */}
               <div className="p-6 border-t border-slate-200 dark:border-slate-700">
-                <a 
-                href="/Khetavath_Rajesh.pdf" 
-                  target="_blank" 
+                <a
+                  href="/Khetavath_Rajesh.pdf"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary w-full py-3 text-center block"
                   onClick={toggleMenu}

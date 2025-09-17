@@ -14,12 +14,12 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-slate-800 dark:text-white leading-tight">
             Hi, I'm{" "}
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Rajesh
+              Rajesh Khetavath
             </span>
           </h1>
           
           <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-            A passionate developer who loves creating beautiful and functional web applications with modern technologies.
+            A passionate developer who loves creating Fast and functional web applications with modern technologies with scalability.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
