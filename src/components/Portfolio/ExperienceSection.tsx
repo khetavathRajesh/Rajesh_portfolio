@@ -7,7 +7,7 @@ const experiences = [
   {
     company: "Proficonlabs",
     position: "Software Engineer",
-    period: "July 2024 - Present",
+    period: "July 2024 - July 2025",
     description: [
       "Lead the development of a new customer-facing portal using Angular and TypeScript",
       // "Implemented CI/CD pipelines that reduced deployment time by 70%",
